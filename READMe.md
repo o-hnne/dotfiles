@@ -1,1 +1,1 @@
-keyd /etc/keyd/default.conf
+[keyd](https://github.com/rvaiya/keyd) /etc/keyd/default.conf
