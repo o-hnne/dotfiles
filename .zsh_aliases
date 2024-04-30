@@ -10,7 +10,7 @@ artisan() {
  
 alias serve='artisan serve'
 alias tinker='artisan tinker'
- 
+alias horizon='artisan horizon'
  
 # Misc PHP
  
@@ -28,11 +28,18 @@ if type "xdg-open" &> /dev/null; then
     alias open="xdg-open"
 fi
 
+alias cpyssh="xclip -selection clipboard < $HOME/.ssh/id_rsa.pub"
+
 # Directories
+
 alias ll='ls -FGlAhp'
+
+# Config
 
 alias zshrc="code ~/.zshrc "
 alias aliases="code ~/.zsh_aliases"
 alias reloadcli="source $HOME/.zshrc"
+
+# Git
+
 alias nah="git reset --hard && git clean -df"
-alias cpyssh="xclip -selection clipboard < $HOME/.ssh/id_rsa.pub"
